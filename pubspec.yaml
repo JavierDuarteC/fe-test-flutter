@@ -29,12 +29,15 @@ environment:
 # the latest version available on pub.dev. To see which dependencies have newer
 # versions available, run `flutter pub outdated`.
 dependencies:
+  dartz: ^0.10.1
   dio: ^5.0.1
+  equatable: ^2.0.5
   flutter_bloc: ^8.1.2
   freezed: ^2.3.2
   get_it: ^7.2.0
   logger: any
   retrofit: ^4.0.1
+  rxdart: ^0.27.7
   flutter:
     sdk: flutter
 

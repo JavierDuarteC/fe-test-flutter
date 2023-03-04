@@ -1,5 +1,7 @@
+import 'package:dartz/dartz.dart';
+import 'package:test/data/failure.dart';
 import 'package:test/data/models/university.dart';
 
 abstract class UniversitiesRepositoryInterface {
-  Future<List<University>?> getUniversities();
+  Future<Either<Failure, List<University>?>> getUniversities();
 }

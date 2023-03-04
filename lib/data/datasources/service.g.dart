@@ -1,6 +1,6 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
-part of 'university_service.dart';
+part of 'service.dart';
 
 // **************************************************************************
 // RetrofitGenerator
@@ -8,8 +8,8 @@ part of 'university_service.dart';
 
 // ignore_for_file: unnecessary_brace_in_string_interps,no_leading_underscores_for_local_identifiers
 
-class _UniversityServiceClient implements UniversityServiceClient {
-  _UniversityServiceClient(
+class _RestClient implements RestClient {
+  _RestClient(
     this._dio, {
     this.baseUrl,
   }) {

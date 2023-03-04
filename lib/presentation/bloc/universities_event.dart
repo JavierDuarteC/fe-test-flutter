@@ -8,11 +8,17 @@ abstract class UniversitiesEvent extends Equatable {
 }
 
 class OnLoad extends UniversitiesEvent {
-  final int fromIndex;
-  final int toIndex;
-
-  const OnLoad(this.fromIndex, this.toIndex);
+  const OnLoad();
 
   @override
-  List<Object?> get props => [fromIndex, toIndex];
+  List<Object?> get props => [];
+}
+
+class OnChangeLayout extends UniversitiesEvent {
+  final bool isList;
+
+  const OnChangeLayout({required this.isList});
+
+  @override
+  List<Object?> get props => [isList];
 }

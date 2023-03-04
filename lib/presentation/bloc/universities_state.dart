@@ -15,16 +15,25 @@ class UniversitiesLoading extends UniversitiesState {}
 class UniversitiesError extends UniversitiesState {
   final String message;
 
-  UniversitiesError(this.message);
+  const UniversitiesError(this.message);
 
   @override
   List<Object?> get props => [message];
 }
 
-class UniversitiesHasData extends UniversitiesState {
+class UniversitiesHasDataAsList extends UniversitiesState {
   final List<University> result;
 
-  UniversitiesHasData(this.result);
+  const UniversitiesHasDataAsList(this.result);
+
+  @override
+  List<Object?> get props => [result];
+}
+
+class UniversitiesHasDataAsGrid extends UniversitiesState {
+  final List<University> result;
+
+  const UniversitiesHasDataAsGrid(this.result);
 
   @override
   List<Object?> get props => [result];
